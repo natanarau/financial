@@ -13,9 +13,9 @@ export const ListMenu = styled(Box) `
 `
 export const IconMenu = styled(Box) `
   svg {
-    font-size: 30px;
+    font-size: 25px;
   }
 `
 export const LabelMenu = styled(Box) `
-   font-size: 20px;
+   font-size: 18px;
 `

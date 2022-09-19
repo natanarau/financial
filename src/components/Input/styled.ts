@@ -10,18 +10,7 @@ export const InputForm = styled(TextField) `
     border-bottom: 1px solid #878787;
   }
   label {
-    font-size: 20px;
+    font-size: 18px;
     color: #878787
-  }
-  label.Mui-focused {
-    color: #EF5350
-  }
-  input {
-    font-size: 20px;
-    color: #EF5350;
-    width: 100%;
-  }
-  .MuiInput-underline:after {
-    border-bottom-color: #EF5350
   }
 `

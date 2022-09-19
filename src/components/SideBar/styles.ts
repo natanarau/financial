@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import styled from "styled-components";
 
 export const Wrapper = styled(Box) `
-  max-width: 300px;
+  width: 280px;
   height: 100vh;
   background-color: #2C2C2E;
 `

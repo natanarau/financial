@@ -6,7 +6,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+.MuiPopover-paper {
+  background-color: #2C2C2E;
+  color: #D5D5D6;
+  border-radius: 20px;
+  width: 250px;
+}
+.MuiPaper-root {
+  border-radius: 20px;
+}
 a {
   color: inherit;
   text-decoration: none;

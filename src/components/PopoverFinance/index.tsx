@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as S from './styles'
-import { Fab, List, ListItemButton, ListItemIcon, ListItemText, Popover } from '@mui/material';
+import { Box, Fab, List, ListItemButton, ListItemIcon, ListItemText, Popover } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -23,7 +23,7 @@ export default function PopoverFinance() {
   const id = open ? 'simple-popover' : undefined;
 
   return (
-    <div>
+    <Box>
       <S.BoxButton>
         <Fab onClick={handleClick} variant="extended">
           <AddIcon />
@@ -67,6 +67,6 @@ export default function PopoverFinance() {
           </List>
         </S.BoxPopover>
       </Popover>
-    </div>
+    </Box>
   );
 }

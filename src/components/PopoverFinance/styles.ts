@@ -18,8 +18,6 @@ export const BoxButton = styled(Box) `
   }
 `
 export const BoxPopover = styled.div`
-  background-color: #fff;
-  color: #2C2C2E;
   [id="despesa"] {
     color: #D04D4B;
   }

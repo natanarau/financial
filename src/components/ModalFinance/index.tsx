@@ -35,7 +35,7 @@ export default function ModalFinance({ children }: ModalProps) {
       >
         <S.WhapperModal>
           <CloseIcon onClick={handleClose} />
-          <Container sx={{marginTop: '5px'}}>
+          <Container sx={{marginTop: '20px', marginBottom: '20px'}}>
             {children}
           </Container>
         </S.WhapperModal>

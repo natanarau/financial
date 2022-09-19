@@ -10,12 +10,11 @@ export const WhapperModal = styled(Box) `
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
-  height: 300px;
   border-radius: 25px;
   [data-testid="CloseIcon"] {
     position: absolute;
     right: 0;
-    margin: 10px;
+    margin: 20px;
     cursor: pointer;
   }
   svg {
