@@ -27,7 +27,7 @@ export default function PopoverFinance() {
       <S.BoxButton>
         <Fab onClick={handleClick} variant="extended">
           <AddIcon />
-          Novo
+          <S.TextButton>Novo</S.TextButton>
         </Fab>
       </S.BoxButton>
       <Popover

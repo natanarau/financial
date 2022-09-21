@@ -15,7 +15,7 @@ export default function Menu() {
             color={pathname === e.urlPage ? '#7C4DFF' : '#D5D5D6'}
             borderLeft={`${pathname === e.urlPage && '3px solid #7C4DFF'}`}
           >
-            <S.IconMenu>{e.icon}</S.IconMenu>
+            <S.IconMenu ml={`${pathname === e.urlPage && '-3px'}`}>{e.icon}</S.IconMenu>
             <S.LabelMenu>{e.label}</S.LabelMenu>
           </S.ListMenu>
         </Link>

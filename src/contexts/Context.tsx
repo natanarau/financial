@@ -9,6 +9,8 @@ type ContextProps = {
   setRevenue: React.Dispatch<React.SetStateAction<boolean>>
   cardExpense: boolean;
   setCardExpense: React.Dispatch<React.SetStateAction<boolean>>
+  sideBarState: boolean;
+  setSideBarState: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 type ProviberProps = {
@@ -22,9 +24,10 @@ export const Provider = ({children}:ProviberProps) => {
   const [expense, setExpense] = React.useState(false)
   const [revenue, setRevenue] = React.useState(false)
   const [cardExpense, setCardExpense] = React.useState(false)
+  const [sideBarState, setSideBarState] = React.useState(true)
 
   return (
-    <Contexts.Provider value={{ modalOpen, setModalOpen, expense, setExpense, revenue, setRevenue, cardExpense, setCardExpense }}>
+    <Contexts.Provider value={{ modalOpen, setModalOpen, expense, setExpense, revenue, setRevenue, cardExpense, setCardExpense, sideBarState, setSideBarState}}>
         {children}
     </Contexts.Provider>
   );

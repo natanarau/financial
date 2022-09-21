@@ -1,3 +1,4 @@
+import React from 'react';
 import * as S from './styles';
 import Box from '@mui/material/Box';
 import Menu from 'components/Menu';
@@ -11,26 +12,30 @@ import { useModalState } from 'hooks/useModalState';
 type Props = {};
 
 export default function SideBar({}: Props) {
-  const { expense, revenue, cardExpense } = useModalState()
+  const { expense, revenue, cardExpense, sideBarState } = useModalState();
 
   return (
-    <S.Wrapper>
-      <Box display="grid" m="0 0 20px 20px" width="150px">
-        <S.BoxLogo>
-          <Box component="h1" color="#fff" m="0">
-            Finance
-          </Box>
-          <Box component="h6" color="#fff" m="0">
-            by Natã Araujo
-          </Box>
-        </S.BoxLogo>
-        <PopoverFinance />
-        <ModalFinance>
-         {expense && <Expense />}
-         {revenue && <Revenue />}
-         {cardExpense && <CardExpense />}
-        </ModalFinance>
-      </Box>
+    <S.Wrapper
+      sx={{
+        position: `${!sideBarState ? 'absolute' : 'block'}`,
+        left: `${sideBarState ? '0' : '-100%'}`,
+        transition: '.5s',
+      }}
+    >
+      <S.BoxLogo>
+        <Box component="h1" color="#fff" m="0">
+          Finance
+        </Box>
+        <Box component="h6" color="#fff" m="0">
+          by Natã Araujo
+        </Box>
+      </S.BoxLogo>
+      <PopoverFinance />
+      <ModalFinance>
+        {expense && <Expense />}
+        {revenue && <Revenue />}
+        {cardExpense && <CardExpense />}
+      </ModalFinance>
       <Menu />
     </S.Wrapper>
   );
