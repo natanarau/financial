@@ -1,5 +1,5 @@
 import * as S from './styles';
-import { Box } from 'components/Box';
+import Box from '@mui/material/Box';
 import Link from 'next/link';
 import { menuList } from './menu.tab';
 import { useRouter } from 'next/router';
@@ -9,13 +9,13 @@ export default function Menu() {
   
   return (
     <Box display="grid">
-      {menuList.map((e) => (
-        <Link href={e.urlPage}>
+      {menuList.map((e, i) => (
+        <Link href={e.urlPage} key={i}>
           <S.ListMenu
-            borderLeft={pathname === e.urlPage && '3px solid #7C4DFF'}
             color={pathname === e.urlPage ? '#7C4DFF' : '#D5D5D6'}
+            borderLeft={`${pathname === e.urlPage && '3px solid #7C4DFF'}`}
           >
-            <S.IconMenu>{e.icon}</S.IconMenu>
+            <S.IconMenu ml={`${pathname === e.urlPage && '-3px'}`}>{e.icon}</S.IconMenu>
             <S.LabelMenu>{e.label}</S.LabelMenu>
           </S.ListMenu>
         </Link>

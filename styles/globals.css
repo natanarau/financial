@@ -6,7 +6,30 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+.MuiPopover-paper {
+  background-color: #2C2C2E;
+  color: #D5D5D6;
+  border-radius: 20px;
+  width: 250px;
+}
+.MuiPaper-root {
+  border-radius: 25px;
+}
+.MuiCalendarPicker-root {
+  background-color: #2C2C2E;
+  color: #fff;
+  border-radius: 20px;
+}
+.MuiPickersDay-root {
+  background-color: #2C2C2E;
+  color: #fff
+}
+.css-1dozdou {
+  background-color: #7C4DFF;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 a {
   color: inherit;
   text-decoration: none;

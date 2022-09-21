@@ -20,6 +20,8 @@
       "pages": ["pages/*"],
       "context": ["context/*"],
       "hooks": ["hooks/*"],
+      "layout": ["layout/*"],
+      "theme": ["theme/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
