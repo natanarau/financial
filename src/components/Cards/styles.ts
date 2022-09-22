@@ -17,10 +17,19 @@ export const Whapper = styled(Box) `
   }
 `
 export const Card = styled(Paper) `
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 100px;
+  min-width: 205px;
   background-color: #2C2C2E;
-  @media (max-width: ${theme.breakpoints.values.lg}px) {
-    
-  }
+`
+export const BoxIcons = styled(Box) `
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 `
