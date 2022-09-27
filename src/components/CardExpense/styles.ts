@@ -3,8 +3,7 @@ import styled from "styled-components";
 import theme from "theme/";
 
 export const Whapper = styled(Box) `
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   gap: 10px;
   margin-top: 20px;
   @media (max-width: ${theme.breakpoints.values.md}px) {
@@ -13,7 +12,8 @@ export const Whapper = styled(Box) `
   }
 `
 export const Card = styled(Paper) `
+  overflow: hidden;
   width: 100%;
-  height: 400px;
+  max-height: 600px;
   background-color: #2C2C2E;
 `
